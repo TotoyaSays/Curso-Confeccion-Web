@@ -1,0 +1,82 @@
+body {background-image: url(fondo3.jpg);
+background-attachment: fixed;
+background-repeat: no-repeat;}
+
+
+
+
+
+div {
+	}
+
+h1 { font-family:monospace;
+	font-size:40px;
+	font color: black;
+	text-align:center;
+	 }
+
+h2 { font-family:monospace;
+	font-size:30px;
+	font color: black;
+	text-align:center;
+	 }
+
+
+img {margin-left: 5px;
+	padding: 10px;}
+
+.parque {width: 300px;
+		height: 300px;
+		background-color: #BBF42F;
+		display: flex;
+		margin: auto;
+		margin-top: 50px;
+		border: 12px solid black;
+		border-style: double;
+		background-image: url(cesped.jpg);
+		}
+
+.seto1 { width:250px;
+		 height:250px;
+		 margin: auto;
+		 display: flex;
+		 border: 10px solid black;
+
+		 border-bottom: none;
+		}
+
+.seto2 { width:200px;
+		 height:200px;
+		 margin:auto;
+		 display: flex;
+		 border: 10px solid black;
+
+		 border-left: none;
+		 }
+
+.seto3 { width:150px;
+		 height:150px;
+		 margin:auto;
+		 display: flex;
+		 border: 10px solid black;
+
+		 border-top: none;
+		  }
+
+.seto4 { width:100px;
+		 height:100px;
+		 margin:auto;
+		 display: flex;
+		 border: 10px solid black;
+
+		 border-right: none;
+		 }
+
+.seto5 { width:50px;
+		 height:50px;
+		 margin:auto;
+		 display: flex;
+		 border: 10px solid black;
+
+		 border-bottom: none;
+		  }

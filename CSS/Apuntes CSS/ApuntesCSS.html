@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+	<style type="text/css">
+
+
+		@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap')
+
+		* {
+  			font-family: "Indie Flower", cursive;
+  			font-weight: 400;
+ 			font-style: normal;}
+
+		body{font-family: monospace}
+		table, td, tr, th { border-radius: 30px;
+							text-align: center}
+
+		th {background-color: lightcoral;}
+
+		td {background-color: lightpink;
+		    opacity: 80%;}
+
+		td+td{background-color: pink;}
+
+		td, tr, th {padding: 10px}
+
+		body {background-image: url(blur1.jpg);
+			  background-size: cover;	
+			  background-attachment: fixed;
+			  background-repeat: no-repeat;
+			}
+
+		img {text-align: center;
+			
+			width: 20%; 
+			margin:auto;
+			border-radius: 30px;
+			}
+
+		table{margin: auto;
+			  margin-top: 30px}
+
+	
+		div {padding: 0px;
+			margin: 0px;
+			text-align: center;
+			bac}
+
+		tr:nth-child(even) { background-color: rebeccapurple; }
+		
+		tr:hover {background-color: hotpink;
+			transition: background-color 0.5s;}
+
+	</style>
+</head>
+
+<body>
+	<div> <img src="loguito.png"></div>
+	<table>
+		<tr>
+			<th>SIMBOLOS</th>
+			<th>EJEMPLO</th>
+			<th>SIGNIFICADO</th>
+		</tr>
+		<tr>
+			<td>Espacio</td>
+			<td>div p {}</td>
+			<td>Pone las propiedades a los p que estan dentro del div</td>
+		</tr>
+		<tr>
+			<td>*</td>
+			<td>* {}, div *</td>
+			<td>Selecciona TODO, o todo lo que hay dentro de lo que le digas</td>
+		</tr>
+		<tr>
+			<td>,</td>
+			<td>h1,p,a</td>
+			<td>Aplica a todos, funciona como la coma normal</td>
+		</tr>
+		<tr>
+			<td>.</td>
+			<td>.class</td>
+			<td>Aplica el formato a el nombre de la clase</td>
+		</tr>
+		<tr>
+			<td>#</td>
+			<td>#identificador</td>
+			<td>Aplica el formato a el nombre de la id</td>
+		</tr>
+		<tr>
+			<td>+</td>
+			<td>div+p</td>
+			<td>Aplica el formato a la siguiente cosa que sea hermana no a lo que tenga dentro</td>
+		</tr>
+		<tr>
+			<td>></td>
+			<td>div>p</td>
+			<td>Aplica el formato a algo que este dentro de una cosa</td>
+		</tr>
+		<tr>
+			<td>~</td>
+			<td>div~p</td>
+			<td>Aplica el formato a lo que esta justo detras de lo que le digas</td>
+		</tr>
+		<tr>
+			<td>::</td>
+			<td>
+				<ul>
+					<li>first-line</li>
+					<li>first-letter</li>
+					<li>before</li>
+					<li>after</li>
+				</ul>
+			</td>
+			<td><ul>
+					<li>Estilo a la primera linea</li>
+					<li>Estilo a la primera letra</li>
+					<li>::before {content:'Añade contenido al principio';}</li>
+					<li>::after {content:'Añade contenido al final';}</li>
+				</ul></td>
+		</tr>
+
+		<tr>
+			<td>:</td>
+			<td>
+				<ul>
+					<li>a:link{}</li>
+					<li>a:visited{}</li>
+					<li>a:hover{}</li>
+					<li>a:target{}</li>
+				</ul>
+			</td>
+			<td>
+				<ul>
+					<li>Da estilo a links que <strong>NO</strong> hemos visitado</li>
+					<li>Da estilo a links que <strong>SI</strong> hemos visitado</li>
+					<li>Da estilo a links cuando el cursor pasa por encima</li>
+					<li>Da estilo a la parte de la pagina donde me lleva el link</li>
+				</ul>
+			</td>
+		</tr>
+
+		<tr>
+			<td>:</td>
+			<td>
+				<ul>
+					<li>input:focus{}</li>
+					<li>input:active{}</li>
+					<li>input:enabled{}</li>
+					<li>input:disabled{}</li>
+					<li>input:checked{}</li>
+					<li>input:read-only{}</li>
+					<li>input:required{}</li>
+					<li>input:invalid{}</li>
+
+				</ul>
+			</td>
+			<td>
+				<ul>
+					<li>Da estilo al input donde podemos escribir</li>
+					<li>Da estilo al input en el momento que lo seleccionamos para escribir</li>
+					<li>Da estilo al input cuando esta habilitado</li>
+					<li>Da estilo al input cuando esta desabillitado</li>
+					<li>Da estilo al input cuando esta sleccionado un checkbox o radio </li>
+					<li>Da estilo al input cuando es solo de lectura</li>
+					<li>Da estilo al input cuando es requerido</li>
+					<li>Da estilo al input cuando no tiene el formato valido sgun su tipo</li>
+				</ul>
+			</td>
+		</tr>
+
+		<tr>
+			<td>:</td>
+			<td>
+				<ul>
+					<li>a:first-of-type{}</li>
+					<li>a:last-of-type{}</li>
+					<li>a:only-of-type{}</li>
+					<li>p:nth-child(4){}</li>
+				</ul>
+			</td>
+			<td>
+				<ul>
+					<li>Da estilo a p si es primer hijo de su madre</li>
+					<li>Da estilo a p si el ultimo hijo de su madre</li>
+					<li>Da estilo a p si es el unico hijo de la madre</li>
+					<li>Da estilo a p si es el cuarto hijo de su madre</li>
+				</ul>
+			</td>
+		</tr>
+
+		<tr>
+			<td>:</td>
+			<td>
+				<ul>
+					<li>a:first-child{}</li>
+					<li>a:last-child{}</li>
+					<li>a:only-child{}</li>
+					<li>p:nth-of-type(4){}</li>
+					<li>p:nth-last-of-type(4){}</li>
+				</ul>
+			</td>
+			<td>
+				<ul>
+					<li>Da estilo al p si es el primer elemento p en aparecer</li>
+					<li>Da estilo al p si es el ultimo elemento p en aparecer</li>
+					<li>Da estilo al p si es el ultimo elemento</li>
+					<li>Da estilo a p si es la vez cuarta vez que parece un elemento p</li>
+					<li>Da estilo a p si es la vez cuarta vez que parece un elemento p empezando a contar desde abajo</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>:</td>
+			<td>:root</td>
+			<td>Afecta al elemento raiz (html)</td>
+		</tr>
+
+		<tr>
+			<td>:</td>
+			<td>:empty{}</td>
+			<td>Afecta a los elementos vacios</td>
+		</tr>
+
+		<tr>
+			<td>:</td>
+			<td>p:not{}</td>
+			<td>Afecta a los elementos que no sean p</td>
+		</tr>
+
+		<tr>
+			<td>[]</td>
+			<td>
+				<ul>
+					<li>elemento[atributo=valor]</li>
+					<li>elemento[atributo~=valor]</li>
+					<li>elemento[atributo^=valor]</li>
+					<li>elemento[atributo$=valor]</li>
+					<li>elemento[atributo*=valor]</li>
+				</ul>
+			</td>
+			<td>
+				<ul>
+					<li>Selecciona elementos cuyo atributo es exactamente igual a valor</li>
+					<li>Selecciona elementos cuyo atributo es igual al valor entre otros valores</li>
+					<li>Selecciona elementos cuyo atributo empieza por algo igual al valor</li>
+					<li>Selecciona elementos cuyo atributo acaba por algo igual al valor</li>
+					<li>Selecciona elementos cuyo atributo contiene algo igual a valor</li>
+				</ul>
+			</td>
+		</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</table>
+</body>
+</html>

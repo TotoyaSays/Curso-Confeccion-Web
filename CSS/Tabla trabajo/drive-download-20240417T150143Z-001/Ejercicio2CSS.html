@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio para practicar fuente, fondo, texto y bloques</title>
+</head>
+<style type="text/css">
+
+
+
+table{border: 1px solid black;
+font-family: arial;
+margin: auto;
+empty-cells: hide}
+
+tr, td, th {padding: 20px;
+border-spacing: 50px;
+border: 1px solid darkgrey ;}
+
+tr:nth-child(even) {background-color: #F2F4F4 ;}
+
+th, td:first-child {background-color: #2ECC71 ;
+color: whitesmoke;}
+
+tr~td {background-color: #2ECC71 ;}
+
+tfoot {font-weight: bold}
+
+td:first-child {font-weight: 600}
+
+tr:hover {background-color: #E5E7E9 ;
+			}
+caption {caption-side: bottom;
+margin-top: 25px}
+
+ul{  margin-left: 400px;
+	 
+	 list-style: none;
+     }
+
+li{margin-left:80px}
+
+img {
+margin-right: 30px}
+
+ul {list-style-image: url(icono.svg);}
+
+ol {list-style-image: none}
+
+.romano{  list-style-type: upper-roman; }
+.letras{ list-style-type: lower-latin; }
+
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+	<table>
+		
+		<caption>Tabla para el ejercicio 2 de CSS</caption>
+		
+		<thead>
+			<tr>
+				<th>HORA</th>
+				<th>LUNES</th>
+				<th>MIERCOLES</th>
+				<th>VIERNES</th>
+			</tr>
+		</thead>
+
+		<tfoot>
+			<tr>
+				<td>Total</td>
+				<td>24,20 €</td>
+				<td>35,55 €</td>
+				<td>54,35 €</td>
+			</tr>
+		</tfoot>
+
+		<tbody>
+			<tr>
+				<td>Hora 1</td>
+				<td>10.75 €</td>
+				<td>12.10 €</td>
+				<td>9.75 €</td>
+			</tr>
+			<tr>
+				<td>Hora 2</td>
+				<td></td>
+				<td>15.20 €</td>
+				<td>16.10 €</td>
+			</tr>
+			<tr>
+				<td>Hora 3</td>
+				<td>8.20 €</td>
+				<td></td>
+				<td>7.30 €</td>
+			</tr>
+			<tr>
+				<td>Hora 4</td>
+				<td>5.25 €</td>
+				<td>9.25 €</td>
+				<td>21.20 €</td>
+			</tr>
+		</tbody>
+
+	</table>
+
+	<ul>
+		<li>  Lista con Letras
+			<ol class="letras">
+				<li>Con la letra a</li>
+				<li>Con la letra b</li>
+			</ol>
+		</li>
+
+		<li>Lista con Números Romanos
+			<ol class="romano">
+				<li>Con el número I</li>
+				<li>Con el número II</li>
+			</ol>
+		</li>
+	</ul>
+
+</body>
+</html>

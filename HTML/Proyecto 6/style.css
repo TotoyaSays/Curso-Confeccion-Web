@@ -1,0 +1,113 @@
+div { }
+
+.logo {
+		width:10%;
+		object-fit: contain ;
+		padding-top: 10px;
+		
+ }
+
+img { width:100%;
+	border-radius: 10%;
+
+
+	 }
+
+.espacio {width: 10%}
+
+.menu {
+		width:70%;
+		text-align: right;
+		font-size: 15px;
+		font-family: monospace;
+		font weight:300px;
+		padding-right: 20px;
+		padding-top: 40px;
+	}
+
+.encabezado {padding-left: 230px;
+			padding-right: 100px;
+			
+
+			
+				}
+
+.cuerpo{margin: 40px;
+
+			}
+
+
+.persona{
+		width:33.33%;
+		margin: 20px;
+		padding: 20px;
+		background-color:lightgreen;
+		text-align: center;
+		border-radius: 10%;
+								}
+
+.encabezado, .cuerpo {
+		display: flex;
+								}		
+.pie { font-family: monospace;
+	   font-size: 15px;
+	   text-align: center;
+	   font-weight: 300px;
+	   padding: 30px;
+
+								}
+
+p 	   {font-family: monospace;
+	   font-size: 25px;
+	   text-align: center;
+	   font font-weight: 300px;
+								}
+
+.mismaaltura {height: 250px;
+			  width: 100%;				
+			  object-fit: cover;
+			  margin left: auto;
+			  margin right: auto;
+								}
+
+.portada {width: 50%;
+		 padding: 30px;
+		 text-align: center;
+		 object-fit: cover;
+		 background-color: lightgreen;
+		 margin: 20px;
+		 border-radius: 10%;
+								}
+
+.titulo {width: 100%;
+		text-align: left;			
+		padding-left: 120px;
+		padding-top: 70px;
+
+
+					}					
+
+.logo, .menu { text-decoration: }
+
+.bloques{ width:50%;
+			margin-top: 70px}
+
+.icono {width: 50px;
+		height: 50px;
+		padding-left: 370px;
+		padding-top: 15px;
+		padding-bottom: 15px}
+
+.textocontacto {padding-left: 25px;
+				padding-top: 25px;
+				font-family: monospace;
+
+
+
+
+.bloqueenviar {padding-left: 50px}									}
+
+
+a {text-decoration: none; color:black}
+/*
+body {background-image: url(mante.jpg);}/*

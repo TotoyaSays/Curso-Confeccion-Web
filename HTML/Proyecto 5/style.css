@@ -1,0 +1,18 @@
+
+	.morado { background-color:mediumpurple; }	
+	.rosa { background-color: pink; }
+	.titulo {color:mediumpurple; font-size: 30px;}
+
+	
+	td {border: 5px solid lightcoral; width: 100px; height: 100px;}
+
+	table 
+		{margin-left:auto;
+		margin-right:auto;
+		margin-bottom:20px;
+		margin-top: 20px;}
+
+	body 
+	{ background-color:pink; }
+
+
