@@ -26,3 +26,5 @@ transition: background-color 0.5s;
 ul li.itemSeleccionado a {background-color: green;}
 
 ul li a:hover {background-color: deeppink;}
+
+.fila+div { background: pink }

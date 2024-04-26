@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Display Flex</title>
+<style type="text/css">
+
+
+body { background-image: url(fondoo.gif);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+
+table{
+text-align: center;
+margin-left: 100px;
+margin-right: 100px;
+border-spacing: 20px;
+}
+
+ul, li {
+list-style: none}
+
+tr, td {
+font-family: verdana;
+background-color: #ABEBC6;
+border-radius: 10px 40px 40px 10px;
+opacity: 70%; 
+}
+
+td, th {
+padding: 10px;
+
+}
+
+td:first-child{
+background-color: #E8DAEF;
+border-radius: 40px 10px 10px 40px;
+}
+
+tr, td:hover{
+background-color: lightblue;
+}
+
+td:nth-child(2){ border-radius:10px }
+
+.div {
+width: 80%;
+height: 200px;
+opacity: 80%;
+margin: auto;
+border-radius: 40px;
+display: flex;
+justify-content: end;
+align-items: end;}
+.bloque:hover{background-color: lightblue;}
+
+.bloque{ 
+padding:10px;
+margin: 10px;
+background-color:white;
+opacity:70%;
+border-radius: 40px;
+font-family: verdana}
+
+
+
+.imagen{
+position: relative;
+right: 300px;
+}
+			
+			* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:auto;
+				width:80px;
+				font-family:verdana;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			
+			
+			.nav li a {
+				color: black;
+				text-decoration:none;
+				display:block;
+				z-index: 10000000;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:80px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+	
+			
+		</style>
+
+</style>
+</head>
+<body>
+
+<div class="div">
+		<div class="imagen"><img src="titulo.png"> </div>
+		<div class="bloque">
+<div id="header">
+			<ul class="nav">
+				<li><a href="">Menu</a>
+					<ul>
+						<li><a href="">Submenu1</a></li>
+						<li><a href="">Submenu2</a></li>
+						<li><a href="">Submenu3</a></li>
+						<li><a href="">Submenu4</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
+
+		</div>
+		<div class="bloque">about us</div>
+</div>
+
+	<table>
+		<tr>
+			<td>justify-content</td>
+			<td>Distribuir los elementos horizontales</td>
+			<td>
+				<ul>
+					<li>flex-start: Alinea los elementos a la izquierda del contenedor</li>
+					<li>flex-end: Alinea los elementos a la derecha del contenedor</li>
+					<li>center: Alinea los elementos al centro del contenedor</li>
+					<li>space-between: Alinea los elementos dejando el mismo espacio entre ellos</li>
+					<li>space-around: Alinea los elementos dejando la misma separacion alrededor de ellos</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>align-items</td>
+			<td>Distribuir los elementos verticalmente</td>
+			<td>
+				<ul>
+					<li>flex-start: Alinea elementos a la parte superior del contenedor</li>
+					<li>flex-end: Alinea elementos a la parte inferior del contenedor</li>
+					<li>center: Alinea elementos en el centro (verticalmente hablando) del contenedor</li>
+					<li>baseline: Muestra elementos en la línea base del contenedor</li>
+					<li>stretch: Elementos se estiran para ajustarse al contenedor</li>
+				</ul>
+			</td>
+		</tr>
+			<tr>
+			<td>flex-direction</td>
+			<td>Define la dirección de los elementos en el contenedor</td>
+			<td>
+				<ul>
+					<li>row: Elementos son colocados en la misma dirección del texto.</li>
+					<li>row-reverse: Elementos son colocados en la dirección opuesta al texto.</li>
+					<li>column: Elementos se colocan de arriba hacia abajo.</li>
+					<li>column-reverse: Elementos se colocan de abajo hacia arriba.</li>
+				</ul>
+			</td>
+		</tr>
+		</tr>
+			<tr>
+			<td>flex-wrap</td>
+			<td>Permite o no colocar elementos en filas adicionales</td>
+			<td>
+				<ul>
+					<li>nowrap: Fuerza a que todos los elemntos esten en la misma linea.</li>
+					<li>wrap: Los elemntos puede pueden ocupar lineas adicionales</li>
+					<li>wrap-reverse: como wrap pero como en un espejo</li>
+				</ul>
+			</td>
+		</tr>
+			<td>flex-flow</td>
+			<td>Es flex-direction+flex-wrap</td>
+			<td>
+				Ponemos los valores de flex-direction + flex-wrap
+			</td>
+		</tr>
+			<tr>
+			<td>order</td>
+			<td>Cambia el orden de UN elemento</td>
+			<td>
+				<ul>
+					<li>Un numero positivo de posiciones hacia la derecha o un numero negativo de posiciones hacia la izquierda</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>align-self</td>
+			<td>Lo mismo que align-items pero SOLO con UN elemento</td>
+			<td>
+				<ul>
+					<li>Acepta los mismos valores que align-items</li>
+				</ul>
+			</td>
+		</tr>
+		</tr>
+			<tr>
+			<td>align-content</td>
+			<td>Define la dirección de los elementos en el contenedor</td>
+			<td>
+				<ul>
+					<li>flex-star: Las filas se colocan arriba</li>
+					<li>flex-end: Las filas se colocan abajo</li>
+					<li>center: Las filas se colocan centradas</li>
+					<li>space-between: Las filas se colocan separadas con la misma distancia entre elllas</li>
+					<li>space-around: Las filas se colocan con las misma separacion entre ellas</li>
+					<li>stretch: Las filas se estiran para ajustarse al contenedor</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+
+
+
+</body>
+</html>
