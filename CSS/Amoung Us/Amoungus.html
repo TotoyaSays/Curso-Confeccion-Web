@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+	<style type="text/css">
+		.bicho{
+			width: 80px;
+			height: 110px;
+			background-color: #E73C92;
+			border-radius: 60% 60% 5px 5px;
+			border: 7px solid black;
+			border-bottom: none;
+			position: relative;
+			margin-top: 130px;
+			margin-left: 130px;
+			z-index: 2;
+		}
+		.bicho:hover {
+		margin-top: 120px;
+			margin-left: 130px;
+			transition: 0.2s;
+		}
+
+		.pantalla {
+		width: 55px;
+		height: 40px;
+		border: 7px solid black;
+		background-color: #1769A9;
+		border-radius: 100%;
+		position: absolute;
+		top: 8px;
+		right: -9px;
+		z-index: 5;
+		}
+
+		.reflejo {
+		width: 45px;
+		height: 30px;
+		background-color: lightblue;
+		border-radius: 100%;
+		position: absolute;
+		top: 15px;
+    	right: -2px;
+    	z-index: 5;
+		}
+
+
+		.reflejo2 {
+	    width: 22px;
+    	height: 12px;
+    	background-color: whitesmoke;
+    	border-radius: 37%;
+    	position: absolute;
+   		top: 18px;
+   		right: 4px;
+    	z-index: 5;
+		}
+
+		.pierna1 	{    
+		width: 30px;
+    height: 30px;
+    background-color: #E73C92;
+    border: 7px solid black;
+    border-top: none;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    top: 107px;
+    left: -7px;
+}
+
+.pierna2	{    
+		width: 30px;
+    height: 30px;
+    background-color: #E73C92;
+    border: 7px solid black;
+    border-top: none;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    top: 107px;
+    left: 43px;
+}
+.ingle {
+	width: 24px;
+    height: 10px;
+    background-color: #E73C92;
+    border: 7px solid black;
+    border-radius: 60%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    position: absolute;
+    top: 97px;
+    left: 29px
+
+}
+.mochila {width: 16px;
+    height: 58px;
+    background-color: #E73C92;
+    border: 8px solid black;
+    border-radius: 10px 0px 0px 10px;
+    position: absolute;
+    top: 30px;
+    left: -32px;
+	z-index: 1}
+
+
+.sombra {
+		width: 115px;
+	    height: 38px;
+	    background-color: lightgrey;
+	    border-radius: 100%;
+	    position: absolute;
+	    top: 117px;
+	    right: -14px;
+	    z-index: -1;
+			}
+.contenedor {
+	width: 850px;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.reflejocuerpo {
+		    width: 72px;
+    height: 102px;
+    background-color: #EE77B3;
+    border-radius: 100%;
+    position: absolute;
+    top: 0px;
+    right: -1px;
+    z-index: 3;
+}
+
+.reflejomochila {    
+	width: 16px;
+    height: 20px;
+    background-color: #EE77B3;
+    border-radius: 22% 0px 0px;
+    position: absolute;
+    top: 36px;
+    right: 88px;
+    z-index: 3;
+}
+
+
+
+
+	</style>
+
+
+<body>
+ <div class="contenedor">
+		<div class="bicho">
+
+			<div class="pantalla"></div>
+			<div class="reflejo"></div>
+			<div class="reflejo2"></div>
+			<div class="pierna1"></div>
+			<div class="pierna2"></div>
+			<div class="ingle"></div>
+			<div class="mochila"></div>
+			<div class="sombra"></div>
+			<div style="background-color:" class="reflejocuerpo"></div>
+			<div class="reflejomochila"></div>
+		</div>
+
+	<div style="background-color: green;" class="bicho">
+
+			<div class="pantalla"></div>
+			<div class="reflejo"></div>
+			<div class="reflejo2"></div>
+			<div style="background-color: green;" class="pierna1"></div>
+			<div style="background-color: green;" class="pierna2"></div>
+			<div style="background-color: green;" class="ingle"></div>
+			<div style="background-color: green;" class="mochila"></div>
+			<div class="sombra"></div>
+			<div style="background-color:#24D224" class="reflejocuerpo"></div>
+			<div style="background-color:#24D224"  class="reflejomochila"></div>
+		</div>
+
+	<div style="background-color: blue;" class="bicho">
+
+			<div class="pantalla"></div>
+			<div class="reflejo"></div>
+			<div class="reflejo2"></div>
+			<div style="background-color: blue;" class="pierna1"></div>
+			<div style="background-color: blue;" class="pierna2"></div>
+			<div style="background-color: blue;" class="ingle"></div>
+			<div style="background-color: blue;" class="mochila"></div>
+			<div class="sombra"></div>
+			<div style="background-color:#3498DB" class="reflejocuerpo"></div>
+			<div style="background-color:#3498DB"  class="reflejomochila"></div>
+		</div>
+
+	<div style="background-color: #D4AC0D;" class="bicho">
+
+			<div class="pantalla"></div>
+			<div class="reflejo"></div>
+			<div class="reflejo2"></div>
+			<div style="background-color: #D4AC0D;" class="pierna1"></div>
+			<div style="background-color: #D4AC0D;" class="pierna2"></div>
+			<div style="background-color: #D4AC0D;" class="ingle"></div>
+			<div style="background-color: #D4AC0D;" class="mochila"></div>
+			<div class="sombra"></div>
+			<div style="background-color:yellow" class="reflejocuerpo"></div>
+			<div style="background-color:yellow;" class="reflejomochila"></div>
+		</div>
+
+<div style="background-color: #7D3C98;" class="bicho">
+
+			<div class="pantalla"></div>
+			<div class="reflejo"></div>
+			<div class="reflejo2"></div>
+			<div style="background-color: #7D3C98;" class="pierna1"></div>
+			<div style="background-color: #7D3C98;" class="pierna2"></div>
+			<div style="background-color: #7D3C98;" class="ingle"></div>
+			<div style="background-color: #7D3C98;" class="mochila"></div>
+			<div class="sombra"></div>
+			<div style="background-color:#A770F1 " class="reflejocuerpo"></div>
+			<div style="background-color:#A770F1" class="reflejomochila"></div>
+		</div>
+	<div style="background-color: #F39C12;" class="bicho">
+
+			<div class="pantalla"></div>
+			<div class="reflejo"></div>
+			<div class="reflejo2"></div>
+			<div style="background-color: #F39C12;" class="pierna1"></div>
+			<div style="background-color: #F39C12;" class="pierna2"></div>
+			<div style="background-color: #F39C12;" class="ingle"></div>
+			<div style="background-color: #F39C12;" class="mochila"></div>
+			<div class="sombra"></div>
+			<div style="background-color:#F7DC6F" class="reflejocuerpo"></div>
+			<div style="background-color:#F7DC6F" class="reflejomochila"></div>
+		</div>
+
+		<div style="background-color: #B03A2E;" class="bicho">
+
+			<div class="pantalla"></div>
+			<div class="reflejo"></div>
+			<div class="reflejo2"></div>
+			<div style="background-color: #B03A2E;" class="pierna1"></div>
+			<div style="background-color: #B03A2E;" class="pierna2"></div>
+			<div style="background-color: #B03A2E;" class="ingle"></div>
+			<div style="background-color: #B03A2E;" class="mochila"></div>
+			<div class="sombra"></div>
+			<div style="background-color:#E74C3C" class="reflejocuerpo"></div>
+			<div style="background-color:#E74C3C" class="reflejomochila"></div>
+		</div>
+		
+
+	<div style="background-color: #424949 ;" class="bicho">
+
+			<div class="pantalla"></div>
+			<div class="reflejo"></div>
+			<div class="reflejo2"></div>
+			<div style="background-color: #424949 ;" class="pierna1"></div>
+			<div style="background-color: #424949 ;" class="pierna2"></div>
+			<div style="background-color: #424949 ;" class="ingle"></div>
+			<div style="background-color: #424949 ;" class="mochila"></div>
+			<div class="sombra"></div>
+			<div style="background-color:#909497;" class="reflejocuerpo"></div>
+			<div style="background-color:#909497" class="reflejomochila"></div>
+		</div>
+
+		<div style="background-color: #A04000;" class="bicho">
+
+			<div class="pantalla"></div>
+			<div class="reflejo"></div>
+			<div class="reflejo2"></div>
+			<div style="background-color: #A04000;" class="pierna1"></div>
+			<div style="background-color: #A04000;" class="pierna2"></div>
+			<div style="background-color: #A04000;" class="ingle"></div>
+			<div style="background-color: #A04000;" class="mochila"></div>
+			<div class="sombra"></div>
+			<div style="background-color:#DC7633;" class="reflejocuerpo"></div>
+			<div style="background-color:#DC7633" class="reflejomochila"></div>
+		</div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

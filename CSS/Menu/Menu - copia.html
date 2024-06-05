@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body {
+		margin: 0;
+		font-family: monospace;
+		letter-spacing: 5px;
+		}
+
+		.menu {
+			opacity: 60%;
+		background-color: lightgrey  ;
+		color: black;
+
+		}
+
+		ul {
+		list-style: none;
+		display: flex;
+		justify-content: flex-end;
+		margin: 0px;
+		padding-left: 0px;
+		}
+
+		li {
+		padding: 25px;
+		}
+
+		li:hover {
+		background-color: #666;
+
+		}
+
+		img{ width:100% }
+
+		.cajaimagen{ 
+			margin-top: 22px;
+		width:50%;
+		height: 446.5px;
+		position: relative;
+		overflow: hidden;
+		}
+
+		.texto{
+		background-color: #66FFFF ;
+		letter-spacing: 5px;
+		padding: 10px;
+		position: absolute;
+		top: 232px;
+    	left: 39px;
+    	font-size: 25px;
+    	opacity: 80%;
+		}
+
+		.texto:hover {background-color:#CCCCFF;
+		opacity: 100%;
+		box-shadow: 0px 0px 10px 5px lightgrey;}
+
+		.contenedor {
+		display: flex;
+		flex-wrap: wrap;
+		height: 446.5px;
+		}
+
+		.cajacolor {
+			margin-top: 22px ;
+		background-color:#EEEEEE;
+		width: 50%;
+		height: 427px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center}
+
+	
+		.icono { 
+			width: 170px;
+			height: 170px;
+			margin:20px;
+			position: relative;
+			box-shadow: 0px 0px 10px 5px lightgrey;
+			background-color: ghostwhite;
+		}
+
+		.textoimagen:hover{}
+
+		.textoimagen{ 
+			width: 160.5px;
+		opacity: 80%;
+		background-color: #33FF99 ;
+		position:absolute;
+		bottom:20px;
+		padding: 5px;
+		text-align: center;
+		 }
+	
+		.icono:hover{
+		box-shadow: 0px 0px 10px 5px lightgrey;
+		}
+
+		.final {
+		background-color: lightgrey;  
+		width: 100%;
+		height: 70px;
+		margin:0px;
+		position: relative;
+		text-align: center;
+			opacity: 80%;
+		background-color: #FFCC99  ;
+
+		 }
+
+		 .copy {position: absolute;
+		 	top:10px;left: 450px}
+
+
+
+		 .imagen {width: 100%;
+		 	}
+
+		 .final p { margin-top:45px }
+
+		@media screen and (max-width: 500px) {
+
+			ul {
+				flex-direction: column;
+				text-align: center;
+			}
+			.cajaimagen {width: 100%}
+			.cajacolor {width: 100%}
+
+
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<ul>
+			<li>Iniciö</li>
+			<li>Quiénes somös</li>
+			<li>Serviciös</li>
+			<li>Cöntactö</li>
+		</ul>
+	</div>
+	<div class="contenedor">
+		<div class="cajaimagen" > <img src="etsy1.jpg"> <div class="texto"> <p> muebles y decöraciön anna</p> </div> </div>
+		<div class="cajacolor"> 
+		
+				
+				 <div class="icono">
+					<div class="imagen">
+				 		<img src="sillita.png"> 
+					</div> 
+				 	<div class="textoimagen"> 
+				 		silla vanity
+				 	</div> 
+				 </div>
+
+				 <div class="icono">
+					<div class="imagen">
+				 		<img src="mesita.png"> 
+					</div> 
+				 	<div class="textoimagen"> 
+				 		mesita hidden
+				 	</div> 
+				 </div>
+
+				  <div class="icono">
+					<div class="imagen">
+				 		<img src="lampara.png"> 
+					</div> 
+				 	<div class="textoimagen"> 
+				 		lampara luxury
+				 	</div> 
+				 </div>
+
+				  <div class="icono">
+					<div class="imagen">
+				 		<img src="mesa.png"> 
+					</div> 
+				 	<div class="textoimagen"> 
+				 		silla lucus
+				 	</div> 
+				 </div>
+				
+				
+				
+				
+	</div>
+		<div class="final"> <p> Copyright 2024 - Victoria Lozano </p> </div>
+	</div>
+</body>
+</html>

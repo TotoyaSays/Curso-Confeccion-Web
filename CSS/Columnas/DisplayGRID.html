@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DISPLAY GRID</title>
+	<style type="text/css">
+		body {
+			font-family: monospace;
+			text-align: center;
+		}
+
+		h1, h2 {
+			text-align: center;
+		}
+		th, td, tr{border-radius: 20px;
+			border: 1px solid black;
+			padding: 10px;
+		}
+		.tablero {display: grid;
+			grid-template: 33.3% 33.3% 33.3% / 33.3% 33.3% 33.3%;
+			background-color: pink;
+			border: 1px solid black;
+			width: 300px;
+			height: 300px;
+			text-align: center;
+			margin: auto;
+			border: 1px solid black;
+			}
+		.ficha {width: 40px;
+			height: 40px;
+			margin: auto;
+			background-color: mediumpurple;
+			border-radius: 100%}
+
+		.uno {
+		grid-column-start: 1;
+		}
+
+		.dos {
+		grid-column-start: 2;
+		grid-row-start: 2
+		}
+		.tres{
+		grid-column-start: 3;
+		grid-row-start: 3
+		}
+	</style>
+</head>
+<body>
+	<h1>display: grid;</h1>
+	<h2>grid-template-columns: 20% 20% 20% 20% 20%;</h2>
+	<h2>grid-template-rows: 20% 20% 20% 20% 20%;</h2>
+
+	<table style="padding: 40px;">
+		<tr>
+			<th>Propiedad</th>
+			<th>¿Qué hace?</th>
+			<th>Posibles valores</th>
+		</tr>
+		<tr>
+			<td>grid-column-start</td>
+			<td>Sitúa el elemento en una columna del grid</td>
+			<td>
+				<ul>
+					<li>Un número: indica el número de borde desde donde se empieza a colocar contando desde la izquierda.</li>
+					<li>Un número negativo: indica el número de borde desde donde se empieza a colocar contando desde la derecha.</li>
+					<li>SPAN + Número: indica el número de columnas que ocupa.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>grid-column-end</td>
+			<td>Nos indica en qué columna acaba el elemento</td>
+			<td>
+				<ul>
+					<li>Un número: indica el número de borde donde acaba, contando desde la izquierda.</li>
+					<li>Un número negativo: indica el número de borde donde acaba, contando desde la derecha.</li>
+					<li>SPAN + número: indica el número de columnas que voy a ocupar</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>grid-column</td>
+			<td>Podemos poner los valores de GRID-COLUMN-STAR/GRID-COLUMN-END</td>
+			<td>
+				Los mismos que grid-column-star separados por un "/"
+			</td>
+		</tr>
+		<tr>
+			<td>grid-row-start</td>
+			<td>Sitúa el elemento en una fila del grid</td>
+			<td>
+				<ul>
+					<li>Un número: indica el número de borde desde donde se empieza a colocar contando desde arriba.</li>
+					<li>Un número negativo: indica el número de borde desde donde se empieza a colocar contando desde abajo.</li>
+					<li>SPAN + Número: indica el número de filas que ocupa.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>grid-row-end</td>
+			<td>Nos indica en que fila acaba el elemento</td>
+			<td>
+				<ul>
+					<li>Un número: indica el número de borde donde acaba, contando desde arriba.</li>
+					<li>Un número negativo: indica el número de borde desde donde acaba, contando desde abajo.</li>
+					<li>SPAN + Número: indica el número de filas que voy a ocupar.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>grid-row</td>
+			<td>Podemos poner los valores de GRID-ROW-STAR/GRID-ROW-END</td>
+			<td>Los mismos que grid-row-star separados por un "/"</td>
+		</tr>
+		<tr>
+			<td>grid-area</td>
+			<td>Podemos poner los valores de GRID-ROW-STAR/GRID-COLUMN-STAR/GRID-ROW-END/GRID-COLUMN-END</td>
+			<td>Los mismos que grid-row-star separados por un "/"</td>
+		</tr>
+		<tr>
+			<td>Cambia la posicion de un elemnto reordenandolo segun su numero de order</td>
+			<td>Numero: ese numero</td>
+		</tr>
+	</table>
+<div class="tablero">
+  <div class="ficha uno"></div>
+  <div class="ficha dos"></div>
+  <div class="ficha tres"></div>
+</div>
+
+</body>
+</html>

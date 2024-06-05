@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mi primer formulario</title>
+	<style type="text/css">
+	
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+		body{
+		font-family: Inconsolata;
+		background-color: #F7F9F9;
+		}
+
+		form{
+		width: 400px;
+		}
+
+		.uno input{
+		padding: 7px;
+		width: 350px;
+		border: 1px solid lightgrey;	
+		margin-top: 15px;
+		}
+		.formulario{
+			background-color: white;
+			width: 460px;
+			border-radius: 10px;
+			margin: auto;
+			box-shadow: 0px 0px  15px lightgrey;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		fieldset{
+		border: 1px solid lightgrey;
+		border-radius: 10px;
+		margin-top: 30px;
+		}
+
+	
+
+		
+		legend{
+		padding: 0px 10px;
+		font-size: 20px;
+		font-weight: 900px;}
+		}
+
+		option{
+		font-family: Inconsolata;
+		}
+
+		select{
+		padding: 7px;
+		width: 370px;
+		border: 1px solid lightgrey;
+		accent-color: lightseagreen;
+		}
+
+		.boton{
+		margin: auto;
+		background-color: lightseagreen;
+		padding: 15px;
+		padding-left: 45px;
+		padding-right: 45px;
+		border: none;
+		border-radius: 5px;
+		font-family: Inconsolata;
+		box-shadow: 0px 0px  8px lightgrey;
+		color: white;
+		}
+
+		.boton:hover{ 
+		transform: scale(1.1);
+		background-color: lightseagreen;
+		transition:1.5s;
+		}
+
+		input[type=radio],input[type=checkbox]{
+		margin-top: 10px;
+		}
+		input[type=checkbox]{
+		accent-color: lightseagreen;
+		
+		}
+
+		.botonclass{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		}
+		
+
+		
+	</style>
+</head>
+<body>
+<div class="formulario">
+<form method="GET" action="loquesea.php">
+	
+
+<fieldset class="uno">
+	<br>
+	<legend >Informacion personal</legend>
+
+		<label for="nombre">Nombre:</label>
+		<br>
+		<input type="text" name="nombre" id="nombre">
+	    <br>
+		<br>
+		<label for="apellidos">Apellidos:</label> 
+		<br>
+		<input type="text" name="apellidos" id="apellidos">
+		<br>
+		<br>
+		<label for="correo">Correo Electronico:</label> <br>
+		<input id="correo" name="correo" type="email"></input>
+		<br>
+		<br>
+		<label for="movil">Movil:</label> <br>
+		<input type="tel" id="movil" name="movil"> </input>
+		<br>
+		<br>
+		</fieldset>
+
+		<fieldset>
+			<br>
+		<legend>Preferencias</legend>
+
+		<label for="pais">Pais:</label>
+		<br>
+		<select style="margin-top:15px ;" name="pais" id="pais">
+			<option></option>
+			<option>España</option>
+			<option>Alemania</option>
+			<option>Japón</option>		
+		</select>
+		<br>
+		<br>
+		Edad:
+		<br>
+		<input style="margin-top:15px ;" type="radio" name="edad" id="mayor" value="mayor">
+		<label for="mayor">Soy mayor de 18 años</label>
+		<br>
+		<input type="radio" name="edad" id="menor" value="menor">
+		<label for="menor">Soy menor de 18 años</label>
+		<br>
+		<br>
+		Intereses:
+		<br>
+		<input style="margin-top:15px;" type="checkbox" name="musica" id="musica" value="si" >
+		<label for="musica">Musica</label>
+		<br>
+		<input type="checkbox" name="deportes" id="deportes" value="si">
+		<label for="deportes">Deportes</label>
+		<br>
+		<input type="checkbox" name="tecnologia" id="tecnologia"value="si">
+		<label for="publicidad">Tecnologia</label><br><br>
+
+ 		</fieldset>
+
+ 		<fieldset>
+ 			<legend>Campos especiales</legend>
+				<label for="color">Color:</label> <br><br>
+				<input type="color" id="color" name="color"> </input>
+				<br><br>
+				<label for="fecha">Escoge una fecha</label> <br><br>
+				<input type="date" id="fecha" name="fecha"> </input>
+				<br><br>
+				<label for="reserva">Escoge una fecha y hora:</label> <br><br>
+				<input type="datetime-local" id="reserva" name="reserva"> </input>
+				<br><br>
+				<label for="escondido">Esto va oculto sin label, para los cookies 🍪</label> <br><br>
+				<input type="hidden" id="escondido" name="escondido" value="123"> </input>
+				<br>
+				<label for="mes">Introduce un mes</label> <br><br>
+				<input type="month" id="mes" name="mes" > </input>
+				<br><br>
+				<label for="numero">Introduce una nota</label> <br><br>
+				<input type="number" id="numero" name="numero" max="10" min="0"> </input><br><br>
+				<label for="peso">Introduce tu peso</label> <br><br>
+				<input type="range" id="peso" name="peso" max="150" min="10"> </input>
+		</fieldset>
+			<fieldset>
+		<legend>Campos un poco complejos</legend>
+				<label for="calle">Tipo de via:</label> <br><br>
+				<input list="via" id="calle">
+					<datalist id="via">
+						<option value="Calle" >
+						<option value="Avenida">
+						<option value="Carretera">
+						<option value="Travesia">
+						<option value="Plaza">
+						<option value="Callejuela">
+					</datalist>
+				 </input>
+				<br><br>
+	
+			
+
+		</fieldset>
+ 		<br>
+ 		<div class="botonclass">
+		<input class="boton" type="submit" name=""><input class="boton" type="reset" name="">
+		</div>
+		<br>
+ 		<br>
+</form>
+</div>
+
+</body>
+</html>

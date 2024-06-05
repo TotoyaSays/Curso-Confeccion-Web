@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{font-family: monospace;
+			letter-spacing: 5px;
+		}
+
+		.contenedor {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		}
+
+		.transformacion {
+		width:15%;
+		margin:50px;
+		height: 150px;
+		background-color: pink;
+		text-align: center;
+		padding: 20px;
+		
+		}
+
+		.uno{
+		transform: translate(20px, 10px);
+		}
+
+		.dos {
+		transform: rotate(25deg);
+		}
+
+		.tres {
+		
+		transform: scale(0.5,0.5);
+		}
+
+		.cuatro {
+		/* por cuanto multiplico el witdh y por cuanto multiplico el heihgt*/
+		transform: scale(1.1);
+		}
+
+		.cinco {
+		transform: scaleY(1.5);
+		}
+
+		.seis {
+		transform: skewX(20deg) ;
+		}
+
+		.siete {
+		transform: skewY(20deg) ;
+		}
+
+		.ocho {
+		transform: skew(20deg, 10deg);
+		}	
+
+		.nueve {
+		transform: matrix(1, -0.3, 0, 1, 0, 0);
+		/* matrix(scale(),  skewY(), skewX(), scaleY(), translateX(), translate*/
+		}
+
+		.diez {
+		transform:rotateX(0deg);
+		}
+
+		.a10:hover{
+		transform:rotateX(300deg);
+		transition: 2s}
+
+		.once {
+		transform:rotateY(0deg) ;
+		}
+
+		.a11:hover{
+		transform:rotateY(300deg);
+		transition: 2s}
+
+		.doce {
+		transform:rotateX(0deg) ;
+		}
+
+		.a12:hover{
+		transform:rotateZ(300deg);
+		transition: 2s}
+
+		.trece {
+		}
+
+		.trece:hover{
+		border-radius:100%;
+		transition: 2s}
+
+		.catorce {
+		transition: border-radius 2s, background-color 2s;
+		transition-timing-function: ease in;
+		}
+
+		.catorce:hover{
+		border-radius: 100%;
+		background-color: yellow;
+		opacity: 50%;
+		}
+	
+	
+		.quince {
+		transition: border-radius 2s, background-color 2s;
+		transition-timing-function: ease in;
+		transition-delay: 1s
+		}
+
+		.quince:hover{
+		border-radius: 100%;
+		background-color: yellow;
+		opacity: 50%;
+		}
+
+		.contenedor2 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		position: absolute;
+		top:75px;
+		left: 30.5px;
+		opacity: 50%;
+		}
+		
+		.contenedor2 div {background-color: yellow;}
+
+		.contenedor3 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		position: absolute;
+		top:1001px;
+		left: -0.5px;
+		opacity: 50%;
+		width: 100%;
+		}
+
+		.contenedor3 div {background-color: yellow}
+
+
+	</style>
+</head>
+<body>
+	<h1> Tranformacion 2D</h1>
+	<div class="contenedor">
+		<div class="transformacion uno">
+			transform: translate(20px, 10px);	
+		</div>
+
+		<div class="transformacion dos">
+			transform: rotate(25deg);	
+		</div>
+
+		<div class="transformacion tres">
+			transform: scale(0.5,0.5);	
+		</div>
+
+		<div class="transformacion cuatro">
+			transform: scale(1.1);	
+		</div>
+
+		<div class="transformacion cinco">
+			transform: scaleY(1.5);	
+		</div>
+
+		<div class="transformacion seis">
+			transform: skewX(20deg);	
+		</div>
+		
+		<div class="transformacion siete">
+			transform: skewY(20deg);	
+		</div>
+
+		<div class="transformacion ocho">
+			transform: skew(20deg, 10deg);	
+		</div>
+
+		<div class="transformacion nueve">
+			transform: matrix(1, -0.3, 0, 1, 0, 0);	
+		</div>
+	</div>
+
+<div class="contenedor2">
+		<div class="transformacion">
+		</div>
+
+		<div class="transformacion">
+		</div>
+
+		<div class="transformacion">
+		</div>
+
+		<div class="transformacion">
+		</div>
+
+		<div class="transformacion">
+		</div>
+
+		<div class="transformacion">
+		</div>
+		
+		<div class="transformacion">
+		</div>
+
+		<div class="transformacion">
+		</div>
+
+		<div class="transformacion ">
+		</div>
+	</div>
+
+	<h1>Transformaciones 3D</h1>
+	<div class="contenedor">
+
+		<div class="transformacion diez">
+			transform: rotateX(0deg);	
+		</div>
+
+		<div class="transformacion once">
+			transform: rotateY(0deg);	
+		</div>
+
+		<div class="transformacion doce">
+			transform: rotateX(0deg);	
+		</div>
+	</div>
+
+	
+	<div class="contenedor3">
+
+		<div class="transformacion diez a10">	
+		</div>
+
+		<div class="transformacion once a11">
+		</div>
+
+		<div class="transformacion doce a12">
+		</div>	
+	</div>
+
+
+	<h1>Transiciones 3D</h1>
+	<div class="contenedor">
+		<div class="transformacion trece">	
+		</div>
+
+		<div class="transformacion catorce">	
+		</div>
+
+		<div class="transformacion quince">
+		</div>	
+	</div>
+
+
+</body>
+</html>

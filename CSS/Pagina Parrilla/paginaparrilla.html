@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<style type="text/css">
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');	
+body { background-color:whitesmoke; 
+font-family: Inconsolata;
+}
+
+.contenedor{
+margin: 20px;
+display: grid;
+grid-template-columns: repeat(14 , 1fr);
+grid-template-rows:80px 540px 300px 80px ;
+}
+.logo{ 
+grid-column: 1 / 4;
+font-size: 40px;
+text-align: center;
+margin-top: 15px;
+
+}
+
+.menu{
+grid-area: 1/4/1/12;
+list-decoration: none;
+margin:auto;
+}
+
+.login{
+grid-area: 1/12/1/15;
+margin:auto;
+padding: 15px;
+border: 1px solid black;
+cursor:pointer;
+}
+.login:hover { background-color:lightgrey;
+opacity:70% }
+
+.linea {
+grid-column: 1/span 15;
+grid-row-start: 2;
+border-top: 1px solid darkgrey;
+}
+
+.titulo{
+grid-row-start:  2;
+grid-column: 1 / span 7;
+}
+
+.imagen{
+
+grid-row-start:  2;
+grid-column: 8/ span 7;
+}
+.espacio1{
+
+grid-area: 3/1/3/1;
+
+}
+
+.fila1{
+border: 1px solid lightgrey;
+grid-area: 3/2/3/6;
+
+padding: 30px;
+}
+
+.fila2{
+border: 1px solid lightgrey;
+grid-area: 3/6/3/10;
+padding: 30px;
+}
+
+.fila3{
+border: 1px solid lightgrey;
+grid-area: 3/10/3/14;
+padding: 30px;
+}
+.espacio2{
+
+grid-area: 3/14/3/15;
+}
+
+.barra{ 
+margin: auto;
+grid-area: 4/1/4/15;
+
+}
+
+ul{ display:flex;
+justify-content:center;
+align-items:center;
+margin:0px;
+padding:0px;
+}
+
+li{
+list-style: none;
+padding: 13px;
+margin: 16px;
+color: grey;
+border-left: 1px solid grey;
+border-right: 1px solid grey;}
+
+.menu li:hover{
+border-bottom: 1px solid grey;
+border-top: 1px solid grey;
+transition: 1.5s;
+}
+
+.select{
+border: 1px solid grey;
+}
+.select:hover{
+border: 3px solid grey;
+transition: 0.2s;
+}
+/*este es li que cuando pasemos por encima con el mouse haga que salga el sybmenu*/
+.cursos {
+position: relative;
+
+
+/*esto es un ul*/
+
+}
+.submenucursos{
+position: absolute;
+bottom: -143px;
+left: -1px;
+flex-direction: column;
+width: 300px;
+background-color: whitesmoke;
+display: none
+}
+.submenucursos li{
+padding: 15px;
+border: 0px;
+margin:0px;
+border: 1px solid black;
+}
+.submenucursos li:hover{
+background-color: #00FF99;
+transition: 0s;
+}
+
+h2{font-family: Outfit;
+font-size: 50px}
+.titulo{
+margin: auto;
+margin-left: 40px;
+}
+
+.imagen img{
+height: 500px;
+width: 500px;
+margin: auto;
+
+
+}
+
+.empezar{
+grid-area: 1/12/1/15;
+padding: 15px;
+border: 1px solid black;
+cursor:pointer;
+width: 60px;
+}
+
+.empezar:hover { background-color:lightgrey;
+opacity:70% }
+
+.icono{
+height: 85px;
+width: 85px;
+}
+
+
+h3, h4, h5 {
+letter-spacing: 2px;
+}
+
+
+
+
+
+@media screen and (max-width: 600px){
+.contenedor{
+margin: 20px;
+display: grid;
+grid-template-rows:100px 100px 450px 400px 300px 300px 300px 100px;
+grid-template-columns:50% 50%;
+}
+
+.logo{ 
+grid-column: 1 / 2;
+grid-row: 1/2;
+}
+
+.login{
+grid-column: 2/2;
+grid-row: 1/2;}
+
+
+.menu{
+grid-column: 1/3;
+grid-row: 2/3;
+;
+}
+
+.imagen{
+grid-row: 3/4;
+grid-column: 1/3;
+text-align: center;
+}
+.titulo{
+grid-column: 1/3;
+grid-row: 4/5;
+text-align: center;
+
+}
+.empezar{margin: auto;}
+
+.fila1{
+grid-column:1/3 ;
+grid-row:5/6 ;
+text-align: center;
+}
+
+.fila2{
+grid-column:1/3 ;
+grid-row: 6/7;
+text-align: center;
+}
+
+.fila3{
+grid-column:1/3 ;
+grid-row:7/8 ;
+text-align: center;
+}
+
+.barra{
+grid-column:1/3 ;
+grid-row:8/9 ;
+}
+
+</style>
+</head>
+<body>
+	<div class="contenedor">
+		<div class="logo">
+			EduiX
+		</div>
+		<div class="menu">
+
+			<ul>
+				<li class="select">home
+				</li>
+
+				<li class="cursos" onmouseover="document.getElementById('submenucursos').style.display='block'" onmouseout="document.getElementById('submenucursos').style.display='none'" >cursos
+					<ul id="submenucursos"  class="submenucursos">
+						<li>Curso de psicologia para dragones</li>
+						<li>Curso de fumigacion de hadas</li>
+						<li>Curso: Educa a tu gnomo</li>
+					</ul>
+				</li>
+				<li>contacto</li>
+			</ul>
+		</div>
+		<div class="login"> entrar</div>
+		<div class="linea"></div>
+		<div class="titulo">
+			<h2>¡Aprende sin limites!</h2>
+			<h2>Todos los cursos sobre magia</h2>
+			<div class="empezar"> Empezar </div>
+		</div>
+		<div class="imagen"> <img src="family2.png "> </div>
+		<div class="espacio1"></div>
+		<div class="espacio2"></div>
+		<div class="fila1">
+			<img class="icono" src="clasificacion.png">
+			<h3>4.9/5</h3>
+			<h4>La mejores opiniones</h4>
+			<h5>Un sinfin de cursos que haran de tu conocimiento un parque de atracciones</h5>
+		</div>
+		<div class="fila2">
+			<img class="icono" src="oso.png">
+			<h3>1200+</h3>
+			<h4>Cursos online</h4>
+			<h5>Un sinfin de cursos que haran de tu conocimiento un parque de atracciones</h5>
+		</div>
+		<div class="fila3">
+			<img class="icono" src="smartphone.png">
+			<h3>1200+</h3>
+			<h4>Cursos online</h4>
+			<h5>Un sinfin de cursos que haran de tu conocimiento un parque de atracciones</h5>	
+		</div>
+		<div class="barra"> Pagina hecha por Victoria Lozano @ Copyright 2024</div>
+		
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+            @font-face {
+    font-family: 'tipopantalla';
+    src: url('casio-fx-9860gii.ttf');
+}
+            body{
+            background-image: url(super.gif);
+            background-size: 100%;
+            }
+             .contenedor{
+                width: 300px;
+                height: 520px;
+                box-shadow: 5px 4px  1px rgb(91, 89, 91);
+                background-color:rgb(217, 164, 210) ;
+                border-radius: 2px;
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin: auto;
+                margin-top:50px;
+                border: 5px solid; 
+                
+             }
+
+             .pantalla{
+            width: 260px;
+            height: 40px;
+            border: 1px solid lightgray;
+            margin-bottom: 20px;
+            background-color: rgb(172, 248, 234);
+            text-align: center;
+            padding: -10px;
+            box-shadow: 5px 4px  1px rgb(91, 89, 89);
+            font-size: 30px;
+            border: 5px solid; 
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            opacity: 80%ñ;
+             }
+
+             .boton{
+            background-color: rgb(212, 85, 115);
+            width: 45px;
+            height: 45px;
+            transition: 0.4s;
+            border: 5px solid;            
+            margin: 9px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 800;
+            font-family:monospace;
+            box-shadow: 5px 4px  1px rgb(91, 89, 89);
+             }
+
+             .boton:hover{ 
+            background-color: rgb(203, 82, 157);
+            transform: scale(0.9);
+            cursor: pointer;
+            box-shadow: 1px 1px  1px rgb(91, 89, 89);
+             }
+
+             h1{
+                margin: 0px;
+                margin-top: 10px;
+                font-size: 30px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                letter-spacing: 3px;
+             }
+
+             .igual{
+            background-color: rgb(241, 18, 70);
+             }
+
+             .operacion{
+                background-color: rgb(221, 90, 156);
+             }
+        </style>
+        <script>
+
+            let teletubies = 'Pelicula de animacion sore unos amigos en el parque';
+            let tresMetrosSobreElCielo = 'ya esta aqui mario casas con su moto';
+            let minorityReport = 'Hay gente que puede predecir el futuro';
+
+
+
+            let bandera = 'abajo';
+            let edad = prompt('DIME TU EDAD MAJO');
+            let edadCorregida = parseFloat(edad);
+            let mayorDeEdad = edad > 18;
+
+
+            switch(edadCorregida){
+                case 10:
+                    console.log(teletubies)
+                    break;
+                case 16:
+                    console.log(tresMetrosSobreElCielo)
+                    break; 
+                 case 24:
+                    console.log(minorityReport)
+                    break;    
+                default:
+                    console.log('ni idea te quedas sin pelicula');
+            }
+
+            function calcular() {
+              
+                    let resultado;
+                    resultado = eval(document.getElementById('pantalla').innerHTML);
+                    document.getElementById('pantalla').innerHTML=resultado;
+                    bandera = 'arriba';
+                    }
+
+            function introducir(tecla){
+                
+                if (bandera == 'abajo') {
+                    document.getElementById('pantalla').innerHTML += tecla;
+                }
+                
+                 if (bandera == 'arriba') {
+                    if (tecla == '+' || tecla == '-'|| tecla == '*'|| tecla == '/'){
+                        document.getElementById('pantalla').innerHTML += tecla;  
+
+                    }else{ // LA TECLA ES 0 o 1 o 3 o 4 o 5 o 6 o 7 o 8 o 9
+                        document.getElementById('pantalla').innerHTML = '';
+                        document.getElementById('pantalla').innerHTML += tecla;   
+                    }
+                 }
+                    bandera = 'abajo';
+            }
+        </script>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>CASIO FX-901</h1>
+            <div id="pantalla" class="pantalla"></div>
+            <div class="boton" onclick="introducir(7)"
+            >7</div>
+            <div class="boton" onclick="introducir(8)"
+            >8</div>
+            <div class="boton" onclick="introducir(9)"
+            >9</div>
+            <div class="boton operacion" onclick="introducir('+')"
+            >+</div>
+            <div class="boton" onclick="introducir(4)"
+            >4</div>
+            <div class="boton" onclick="introducir(5)"
+            >5</div>
+            <div class="boton" onclick="introducir(6)"
+            >6</div>
+            <div class="boton operacion" onclick="introducir('-')"
+            >-</div>
+            <div class="boton" onclick="introducir(1)"
+            >1</div>
+            <div class="boton" onclick="introducir(2)"
+            >2</div>
+            <div class="boton" onclick="introducir(3)"
+            >3</div>
+            <div class="boton operacion" onclick="introducir('*')"
+            >*</div>
+            <div class="boton operacion" onclick="document.getElementById('pantalla').innerHTML = ''"
+            >C</div>
+            <div class="boton" onclick="introducir(0)"
+            >0</div>
+            <div class="boton operacion" onclick="introducir('/')"
+            >/</div>
+            <div class="boton igual" onclick="calcular()">=</div>
+        </div>
+    </div>
+
+</body>
+</html>

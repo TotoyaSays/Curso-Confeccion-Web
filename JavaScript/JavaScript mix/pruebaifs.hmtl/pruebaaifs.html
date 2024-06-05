@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = 21;
+        let mensaje;
+
+        if (x > 10) {
+            mensaje = ('soy mayor de 10');
+            if (x < 20) {
+                mensaje += 'pero soy menor de 20'
+            }
+        } else {
+           mensaje = 'soy menor de 10';
+        }
+
+       // window.alert(mensaje);
+
+       let diaSemana = 'domingo';
+       
+
+       switch (diaSemana) {
+        case 'lunes':
+            window.alert('Animo con la semana');
+            break;
+        case 'martes':
+            window.alert('vengaaaa es martes');
+            break ;
+        case 'miercoles':
+            window.alert('Animo con el miercoles');
+            break;    
+        default:
+            if (diaSemana == 'viernes' || diaSemana =='sabado'|| diaSemana =='domingo'  ){
+            window.alert('fiestukiiiiiiii') ;
+            } else {
+              window.alert('error');
+            }
+            }
+    </script>
+</body>
+</html>

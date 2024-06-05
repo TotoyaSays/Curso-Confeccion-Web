@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style>
+
+		.contenedor{
+		height: 300px;
+		width: 320px;
+		display: grid;
+		grid-template-columns: repeat(16, 20px);
+        grid-template-rows: repeat(15, 20px)
+
+		}
+
+		.cuadradorosaojos {
+		 grid-area: 4 / 1 / 8/ 15;
+		 background-color: lightpink;
+		}
+		.cuadradorosaboca {
+		grid-area: 8 / 2 / 11 / 16;
+		background-color: lightpink;
+		}
+		.cuadradorosabarbilla {
+		grid-area: 11 / 3 / 14 / 15;
+		background-color: lightpink;}
+
+		.cuadradorosafrente {
+		grid-area: 2 / 2 / 5/ 14;
+		background-color: lightpink;
+		}
+		.perfiluno {
+		grid-area: 1/3/1/5;
+		background-color: black;
+		}
+		.perfildos {
+		grid-area: 1/6/1/11;
+		background-color: black;
+		}
+		.perfiltres {
+		grid-area: 2/2/2/3;
+		background-color: black;
+		}
+		.perfilcuatro {
+		grid-area: 2/5/2/6;
+		background-color: black;
+		}
+		.perfilcinco {
+		grid-area: 2/11/2/13;
+		background-color: black;
+		}
+		.perfilbrazoizq{
+		grid-area: 3/1/8/1;
+		background-color: black;
+		}
+		.perfilbrazoizqdos{
+		grid-area: 8/2/11/2;
+		background-color: black;
+		}
+		.perfilbrazoizqtres{
+		grid-area: 11/3/13/3;
+		background-color: black;
+		}
+		.ojouno{
+		grid-area: 4/6/8/6;
+		background-color: black;
+		}
+		.ojodos{
+		grid-area: 4/8/8/8;
+		background-color: black;
+		}
+		.rojouno{
+		grid-area: 8/4/8/6;
+		background-color: red;
+		}
+		.rojodos{
+		grid-area: 8/9/8/11;
+		background-color: red;
+		}
+		.boca{
+		grid-area: 9/7/11/7;
+		background-color: black;
+		}
+		.puntouno{
+		grid-area: 3/4/3/4;
+		background-color: black;
+		}
+		.puntodos{
+		grid-area: 3/13/3/14;
+		background-color: black;
+		}
+		.puntotres{
+		grid-area: 4/14/6/15;
+		background-color: black;
+		}
+		.puntocuatro{
+		grid-area: 6/15/6/16;
+		background-color: black;
+		}
+		.puntocinco{
+		grid-area: 7/16/9/16;
+		background-color: black;
+		}
+		.puntoseis {
+		grid-area: 9/13/9/16;
+		background-color: black;
+		}
+		.zapatouno {
+		grid-area: 13/2/15/7;
+		background-color: red;
+		}
+		.puntosiete {
+		grid-area: 12/4/12/4;
+		background-color: black;
+		}	
+		.puntoocho{
+		grid-area: 13/2/13/2;
+		background-color: black;
+		}	
+		.puntonueve{
+		grid-area: 14/1/14/1;
+		background-color: black;
+		}	
+		.puntodiez{
+		grid-area: 15/2/15/8;
+		background-color: black;
+		}
+		.puntoonce{
+		grid-area: 14/7/14/12;
+		background-color: black;
+		z-index: 333;
+		}
+		.puntodoce{
+		grid-area: 13/5/13/7;
+		background-color: black
+		}
+		.puntodoce{
+		grid-area: 13/5/13/7;
+		background-color: black
+		}
+		.puntotrece{
+		grid-area: 15/11/15/14;
+		background-color: black;
+		}
+		.cuadradorojo{
+		grid-area: 10/12/13/16;
+		background-color: red
+		}
+		.cuadradorojodos{
+		grid-area: 13/11/15/15;
+		background-color: red
+		}
+		.puntocatorce{
+		grid-area: 10/16/13/16;
+		background-color: black;
+		}
+		.puntoquince{
+		grid-area: 13/15/13/15;
+		background-color: black;
+		}
+		.puntodieciseis{
+		grid-area: 13/10/13/10;
+		background-color: black;
+		}
+		.puntodiecisiete{
+		grid-area: 11/11/13/11;
+		background-color: black;
+		}
+		.puntodieciocho{
+		grid-area: 10/12/10/12;
+		background-color: black;
+		}
+		.puntodiecinueve{
+		grid-area: 2/13/2/14;
+		background-color: white;
+		}
+		.veinte{
+		grid-area: 7/15/7/16;
+		background-color: lightpink;
+		}
+		
+		.veintiuno{
+		grid-area: 14/14/14/14;
+		background-color: black;
+		}
+
+	</style>
+
+
+</head>
+
+<body>
+	<div class="contenedor">
+		
+		<div class="cuadradorosafrente"></div>
+		<div class="cuadradorosaojos"></div>
+		<div class="cuadradorosaboca"></div>
+		<div class="cuadradorosabarbilla"></div>
+		<div class="perfilbrazoizq"></div>
+		<div class="perfilbrazoizqdos"></div>
+		<div class="perfilbrazoizqtres"></div>
+		<div class="perfiluno"></div>
+		<div class="perfildos"></div>
+		<div class="perfiltres"></div>
+		<div class="perfilcuatro"></div>
+		<div class="perfilcinco"></div>
+		<div class="ojouno"></div>
+		<div class="ojodos"></div>
+		<div class="rojouno"></div>
+		<div class="rojodos"></div>
+		<div class="boca"></div>
+		<div class="puntouno"></div>
+		<div class="puntodos"></div>
+		<div class="puntotres"></div>
+		<div class="puntocuatro"></div>
+		<div class="puntocinco"></div>
+		<div class="puntoseis"></div>
+		<div class="zapatouno"></div>
+		<div class="puntosiete"></div>
+		<div class="puntoocho"></div>
+		<div class="puntonueve"></div>
+		<div class="puntodiez"></div>
+		<div class="puntoonce"></div>
+		<div class="puntodoce"></div>
+		<div class="puntotrece"></div>
+		<div class="cuadradorojo"></div>
+		<div class="cuadradorojodos"></div>
+		<div class="puntocatorce"></div>
+		<div class="puntoquince"></div>
+		<div class="puntodieciseis"></div>
+		<div class="puntodiecisiete"></div>
+		<div class="puntodieciocho"></div>
+		<div class="puntodiecinueve"></div>
+		<div class="veinte"></div>
+		<div class="veintiuno"></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+
+	</div>
+</body>
+</html>

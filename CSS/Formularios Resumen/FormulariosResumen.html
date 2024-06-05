@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Resumen Formularios</title>
+	<style type="text/css">
+		body{
+		font-family: monospace;
+		color: black;
+		background-color: grey;
+
+		}
+		table{
+		text-align: center;
+		width: 900px;
+		margin: auto;
+		}
+		td,tr{
+			padding: 10px;
+		}
+		ul,li{ 
+		list-style:none }
+
+		textarea{
+		resize: none;
+		overflow: hidden;
+		text-decoration: none;
+		background-color: black;
+		opacity:90%;
+		width: 400px;
+		height: 90px;
+		border: none;
+		border-radius: 10px 10px 0px 0px;
+		padding: 5px;
+		color: lime;
+		}
+		input{
+		background-color: grey;
+		}
+	</style>
+</head>
+<body>
+<h1>Resumen Formularios</h1>
+	<table border="1">
+		<tr>
+			<th>ejemplo</th>
+			<th>codigo</th>
+			<th>atributos</th>
+		</tr>
+		<tr>
+			<td>
+				<form>
+					<fieldset>
+						<legend>AQUI VA EL TITULO</legend>
+						AQUI IRIA UNA AGRUPACION
+					</fieldset>
+				</form>
+			</td>
+			<td>
+				<textarea>
+<form>
+	<fieldset>
+		<legend>Aqui va el titulo</legend>
+	</fieldset>		
+</form>	
+				</textarea>	
+			</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>
+				<form>
+<label for="numeroID">Titulo del INPUT</label>
+<input type="text" name="" id="ID">
+				</form>
+			</td>
+				<td>
+					<textarea>
+<label for=numeroID>Titulo del INPUT</label>
+<input type="text" name="" id="ID">	
+					</textarea>		
+				</td>
+				<td> El valor del atriuto for tiene que coincidir con el valor del atributo ID del input</td>
+		</tr>
+		<tr>
+			<td>
+				<form>
+					<input type="text" name="nombre" id="ID" value="Input tipo texto">
+				</form>
+			</td>
+			<td>
+				<textarea>
+<input type="text" name="nombre" id="ID" value="Input tipo texto">
+				</textarea>			
+			</td>
+			<td>
+				<ul>
+					<li>name: Cuando viaja por la URL va bajo este nombre. ?name=valorQueEscriba</li>
+					<li>value:Es el valor que escribe el usuario y que viajara por la URL</li>
+					<li>size: Especifica el ancho en numero de caracteres</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<form>
+					<input type="email" name="correo" id="ID" value="correo@dominio.com" required>
+				</form>
+			</td>
+			<td>
+				<textarea>
+<input type="email" name="correo" id="correo" value="correo@dominio.com">
+				</textarea>			
+			</td>
+			<td>
+				required: Se pone solo. Si se pone debe rellenarse para que se pueda enviar el formulario.
+			</td>
+		</tr>
+<td>
+				<form>
+					<input type="password" name="contrasena" value="soyunacontraseña">
+				</form>
+			</td>
+			<td>
+				<textarea>
+<input type="password" name="contrasena">
+				</textarea>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<form>
+					<input type="checkbox" name="casilla" value="condiciones" checked>
+				</form>
+			</td>
+			<td>
+				<textarea>
+<input type="checkbox" name="casilla" value="condiciones" checked>
+				</textarea>
+			</td>
+			<td>
+				<ul>
+					<li>checked: Si está escrito la casilla aparece marcada.
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<form>
+					<input type="radio" name="opcion" value="Si">
+					<input type="radio" name="opcion" value="No">
+				</form>
+			</td>
+			<td>
+				<textarea>
+<input type="radio" name="opcion" value="Si">
+<input type="radio" name="opcion" value="No">
+				</textarea>
+			</td>
+			<td>
+				<ul>
+					<li>name: Todos tienen el mismo "name" y si se marca uno los otros se desmarcan</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<form>
+					<input type="color" name="color">
+				</form>
+			</td>
+			<td>
+				<textarea>
+<input type="color" name="color"&gt;>
+				</textarea>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<form>
+					<select name="lista">
+						<option>Opción 1</option>
+						<option>Opción 2</option>
+						<option>Opción 3</option>
+						<option>Opción 4</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<textarea>
+<select name="lista">
+<option>Opción 1</option>
+<option>Opción 2</option>	
+<option>Opción 3</option>
+<option>Opción 4</option>
+</select>
+				</textarea>
+			<td>
+			</td>
+		</tr>
+
+	</table>
+</body>
+</html>

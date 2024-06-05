@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mi primer JavaScript</title>
+<style type="text/css">
+
+body{
+	text-align: center;
+	font-family: monospace;
+	background-color: #212F3C ;
+}
+
+.bombilla{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.bola{
+	border-radius: 100% 100% 50px 50px;
+	width: 200px;
+	height: 200px;
+	background-color: #CCC;
+	border: 5px solid;
+}
+
+.rosca{
+	background-color: darkgrey;
+	height: 30px;
+	width:120px ;
+	border-radius: 20px;
+	border: 5px solid;
+}
+
+.alambre{
+	font-size: 150px;
+	position: relative;
+	bottom: 260px;
+}
+
+.interruptor{
+	height: 50px;
+	width: 70px;
+	border: 5px solid;
+	border-radius: 10px;
+	background-color: lightgrey;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	margin-top:-150px;
+}
+
+.interruptor:hover{
+	background-color: darkgrey;
+	transform: scale(1.1);
+}
+
+.palanca{
+	font-size: 20px;
+	height: 100%;
+	width: 100%;
+	margin-top: 22px;
+}
+
+
+</style>
+<script type="text/javascript">
+
+</script>
+</head>
+<body id="body">
+<h1>BOMBILLA</h1>
+	<div class="bombilla">
+		<div class="bola" id="bola"></div>
+		<div class="rosca"></div>
+		<div class="rosca"></div>		
+		<div class="rosca"></div>
+		<div class="alambre">M</div>		
+	</div>
+
+	<div class="interruptor">
+		<div class="palanca" id="palanca" onclick="
+
+		if(document.getElementById('bola').style.backgroundcolor =='yellow') {
+
+		document.getElementById('bola').style.backgroundcolor = '#CCC';
+
+		} else {
+			document.getElementById('bola').style.backgroundcolor = 'yellow';
+		}
+
+
+
+		">OFF</div>
+	</div>
+</body>
+</html>
